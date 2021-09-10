@@ -1,0 +1,13 @@
+<title-box title="Search LuckyTrip" subtitle="350 destinations, 1500 blog posts, Unlimited Trips"></title-box>
+<div id="search-box-wrapper">
+  <search-box (onSearch)="searchSubmitted($event)"></search-box>
+</div>
+<div id="trending-box-wrapper">
+  <h3 id="trending-title">Trending</h3>
+  <div class="grid">
+    <div *ngFor="let destination of destinationList$ | async;" class="grid-item">
+      <thumbnail-box (click)="goToDetails(destination.id)" [image]="destination.image_url" [brief]="destination.city">
+      </thumbnail-box>
+    </div>
+  </div>
+</div>

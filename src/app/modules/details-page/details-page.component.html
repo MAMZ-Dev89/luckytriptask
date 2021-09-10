@@ -1,0 +1,17 @@
+<title-box [title]="destinationDetails.destination.country_name" [subtitle]="destinationDetails.destination.city">
+</title-box>
+<div id="blog-box-wrapper">
+  <h3 id="blog-title">Blog Posts</h3>
+  <div class="grid">
+    <div *ngFor="let i of [1,2,3,4,5,6]" class="grid-item">
+      <thumbnail-box></thumbnail-box>
+    </div>
+  </div>
+</div>
+<div id="lucky-box-wrapper">
+  <h3> Find a trip to {{ destinationDetails.destination.country_name }} </h3>
+  <h4> Tap the Lucky button to get started... </h4>
+  <div class="lucky-btn">
+    <img src="../../../assets/images/lucky_button.png" alt="lucky_button" />
+  </div>
+</div>

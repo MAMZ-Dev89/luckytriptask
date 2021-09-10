@@ -1,0 +1,13 @@
+.search-box {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.search-box input {
+  border-radius: 15px;
+  background: linear-gradient(90deg, #b4a5d1 0%, #b9a9d8 20%, #b3a4d4 40%, #b19dd0 60%, #a496bd 80%, #a395b9 100%);
+  font-size: 20px;
+  line-height: normal;
+  width: 100%;
+}

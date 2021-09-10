@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  background: linear-gradient(180deg, #000 0%, #fff 0%, #000 10%) no-repeat;
+  height: 100%;
+  font-family: 'Avenir'Courier monospace;
+}
+
+.grid {
+  display: inline-grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  margin: 5px auto;
+}

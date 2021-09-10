@@ -1,0 +1,13 @@
+.thumbnail {
+  background-color: #a0a6c1;
+  border-radius: 10px;
+  width: 350px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
