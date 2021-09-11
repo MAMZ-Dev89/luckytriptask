@@ -1,7 +1,18 @@
-<title-box [title]="destinationDetails.destination.country_name" [subtitle]="destinationDetails.destination.city">
+<title-box [title]="destinationDetails.destination.country_name" [subtitle]="destinationDetails.destination.city"
+  [backgroundimage]="destinationDetails.destination.thumbnail?.image_url">
 </title-box>
-<div id="blog-box-wrapper">
-  <h3 id="blog-title">Blog Posts</h3>
+<div class="shadow-wrapper"></div>
+<div id="details-wrapper">
+  <h2>What’s it like?</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.
+    Duis
+    aute irure dolor in reprehenderit in voluptate velit.</p>
+</div>
+<div id="thumbnails-box-wrapper">
+  <h3>Blog Posts</h3>
   <div class="grid">
     <div *ngFor="let i of [1,2,3,4,5,6]" class="grid-item">
       <thumbnail-box></thumbnail-box>

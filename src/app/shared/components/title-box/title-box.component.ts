@@ -9,7 +9,7 @@ export class TitleBoxComponent implements OnInit {
 
   @Input('title') title: string = '';
   @Input('subtitle') subTitle: string = '';
-  @Input('backgroundimage') backgroundImage: string = '';
+  @Input('backgroundimage') backgroundImage: string | undefined = '';
 
   constructor() { }
 

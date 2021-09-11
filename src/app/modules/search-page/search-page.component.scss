@@ -1,12 +1,8 @@
-#trending-title {
-  color: #7cfbff;
-}
-
-#trending-box-wrapper {
+.no-result {
+  text-align: center;
+  font-size: 32px;
+  color: #ffffff;
   width: 100%;
-}
-
-#search-box-wrapper {
-  margin: 60px auto;
-  width: 30%;
+  font-weight: 900;
+  margin: 120px 0px;
 }

@@ -1,13 +1,18 @@
-<title-box title="Search LuckyTrip" subtitle="350 destinations, 1500 blog posts, Unlimited Trips"></title-box>
-<div id="search-box-wrapper">
+<title-box title="Search LuckyTrip" subtitle="350 destinations, 1500 blog posts, Unlimited Trips"
+  [backgroundimage]="'../../../../assets/images/background.png'"></title-box>
+<div class="shadow-wrapper">
   <search-box (onSearch)="searchSubmitted($event)"></search-box>
 </div>
-<div id="trending-box-wrapper">
-  <h3 id="trending-title">Trending</h3>
-  <div class="grid">
+<div id="thumbnails-box-wrapper">
+  <h3>Trending</h3>
+  <div *ngIf="(destinationList$ | async)?.length !== 0" class="grid">
     <div *ngFor="let destination of destinationList$ | async;" class="grid-item">
-      <thumbnail-box (click)="goToDetails(destination.id)" [image]="destination.image_url" [brief]="destination.city">
+      <thumbnail-box [routerLink]="['/details',destination.id]" [image]="destination.image_url"
+        [brief]="destination.city">
       </thumbnail-box>
     </div>
+  </div>
+  <div *ngIf="(destinationList$ | async)?.length == 0" class="no-result">
+    <p> No Results Found... </p>
   </div>
 </div>

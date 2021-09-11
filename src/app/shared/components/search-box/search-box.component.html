@@ -1,5 +1,8 @@
-<div class="search-box">
-  <span><img src="../../../../assets/images/magnifying_glass_large.png" alt="search_icon" /> </span>
-  <input id="search" type="text" [(ngModel)]="searchText" />
-  <button id="go" value="go" type="button" (click)="submitSearch()">Go</button>
-</div>
+<form>
+  <div class="search-box">
+    <span class="input-icon"><img src="../../../../assets/images/magnifying_glass_large.png" alt="search_icon" />
+    </span>
+    <input id="search" name="search" type="text" [(ngModel)]="searchText" placeholder="Enter a Destination..." />
+    <button id="go" value="go" type="sumbmit" (click)="submitSearch()">Go</button>
+  </div>
+</form>

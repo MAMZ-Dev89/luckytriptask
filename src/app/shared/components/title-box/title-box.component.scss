@@ -1,4 +1,26 @@
 .title-wrapper {
   text-align: center;
   color: #fff;
+  padding-top: 168px;
+}
+
+.title-wrapper h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.title-wrapper h3 {
+  font-size: 29px;
+  font-weight: 900;
+}
+
+.title-wrapper-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }

@@ -2,21 +2,45 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  background: #000;
-  background: linear-gradient(180deg, #000 0%, #fff 0%, #000 10%) no-repeat;
-  height: 100%;
-  font-family: 'Avenir'Courier monospace;
+  width: 100%;
+  font-family: 'Avenir', Helvetica, sans-serif;
+  background-color: #211F2A;
 }
 
 .grid {
-  display: inline-grid;
-  grid-column-gap: 10px;
-  grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+  height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  gap: 20px;
+  grid-gap: 20px;
 }
 
-.grid-item {
-  margin: 5px auto;
+#thumbnails-box-wrapper {
+  width: 89%;
+  margin: 0 auto;
+}
+
+#thumbnails-box-wrapper h3 {
+  color: #7BFBFF;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+.shadow-wrapper {
+  background: linear-gradient(0, rgba(33, 31, 42, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  margin-top: 127px;
+  margin-bottom: 116px;
+  height: 176px;
 }
